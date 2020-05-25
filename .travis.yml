@@ -1,0 +1,13 @@
+language: node_js
+node_js: 12
+dist: trusty
+sudo: required
+branches:
+  only:
+  - master
+script:
+  - npm run build
+deploy:
+  provider: firebase
+  token:
+    secure: ZQ5fimcDoP+ad0loJmonq9HXYIbWZAC+7zv5kG4u+U+p/sxA4MA4RqMF2WZtlNRSEWxupiB1NkUy4wOlGCADNHRxft9KTqjViP6sThh06phVk3zci9tOmqDW0qZtGTmsFkofKenw54pq0qY9qL4SaSl1mR7Z2j55HRzrMV2yqVpnPW18IRhbLmbeIe36lN47WwvAfYeiD5s+49K6wKQWEjSVX4KQEPlWS2af0gg2Rh0vK5rRHz7TXzby5ftRGJWkSJxiIMuQE6TGzPcVrdsBHiprv257ZRYoi/2Qay9vQSfBAZM7mpUSVV64XUgZ+gD7IfQvpMOPOrFIVfhgsdDgxVJ9Wf6Phs/sfLd5b4tEQgmthx4rB3xme13arQSaKAptE834qL2X29HnAM4yzbgaNuplCyNUdz2C/pipgau6K2hk6cuI7qufJlpHgHYCGK1STGW746v2lZt/sDKLKVLRuMsEtDVaLYJRuw3GuPlvx8c/5zSD/No+wlbNzQE3e7lPofgROEABMZTZVTUc9XSvq7IEXT13SoUleI/+rrDv/O8+wpGBSORuqINdg10UQGcZiJq/54IM0spoQy3+vrcBIwN+Vu34m1Xxu+hrO0RH09GkepMhu79Ktl3zsMCuIZqOgoOSKwW8PTFB0thnMi/o65jH4CCvH+VA+baXyWIZTS0=
