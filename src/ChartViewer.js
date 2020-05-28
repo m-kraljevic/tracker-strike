@@ -5,7 +5,6 @@ import ReactFC from "react-fusioncharts";
 
 ReactFC.fcRoot(FusionCharts, TimeSeries);
 
-const jsonify = res => res.json();
 const schemaFetch = [{
     "name": "Time",
     "type": "date",

@@ -78,7 +78,7 @@ class Home extends Component {
     }
 
     componentDidMount() {
-        let careerStats = null;
+        
         let KDRatio = null;
         firebase.database().ref(firebase.auth().currentUser.uid).on('value', (snap) => {
             console.log('theres new values')
@@ -123,7 +123,6 @@ class Home extends Component {
         // let currDate = (date.getMonth() + 1) + '/' + date.getDate() + '/' + date.getFullYear();
         // let userProfile = firebase.database().ref(firebase.auth().currentUser.uid);
         // userProfile.on('value', (snap) => { console.log(snap.val()) });
-        let drawCareerStats = null;
 
         let totalKills = 0;
         let totalDeaths = 0;
@@ -131,14 +130,14 @@ class Home extends Component {
         if (this.state.careerStats) {
             Object.values(this.state.careerStats).forEach(item => { totalKills += item.kills });
             Object.values(this.state.careerStats).forEach(item => { totalDeaths += item.deaths });
-            Object.values(this.state.careerStats).forEach(item => { totalDeaths += item.practice });
+            Object.values(this.state.careerStats).forEach(item => { totalPractice += item.practice });
         }
 
         return (
             <div>
                 <div>
                     <div>
-                        Total career practice time: {totalDeaths} minutes
+                        Total career practice time: {totalPractice} minutes
                     </div>
                     <div>
                         Total career kills: {totalKills}
