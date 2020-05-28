@@ -1,5 +1,9 @@
 # tracker-strike
-Personal project to track performance in Counter Strike Global Offensive
+Personal project to track performance in Counter Strike Global Offensive, like a fitness tracker for the PC game.
+
+Allows users to log how much offline practice they have done, along with their game performances, then charts the two as they change over time. 
+
+Uses a React front end with a Google Firebase backend, available at https://tracker-strike.firebaseapp.com/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
